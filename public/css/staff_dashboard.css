@@ -1,0 +1,504 @@
+body {
+      background: linear-gradient(180deg, #5aa35a 0%, #479147 100%);
+      min-height: 100vh;
+      color: #222;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    /* Navbar with green background and white text */
+    .navbar-custom {
+      background-color: #479147;
+      padding: 0.5rem 1rem;
+    }
+
+    .navbar-brand,
+    .nav-link {
+      color: #f9faf9;
+      font-weight: 600;
+      font-size: 1rem;
+    }
+
+    .nav-link:hover,
+    .nav-link:focus {
+      color: #d2f0d2;
+    }
+
+    .btn-logout {
+      font-weight: 600;
+      font-size: 0.85rem;
+      padding: 0.35rem 0.75rem;
+      background-color: #e04e53;
+      border: none;
+      color: #fff;
+      border-radius: 0.25rem;
+      transition: background-color 0.2s ease;
+    }
+
+    .btn-logout:hover,
+    .btn-logout:focus {
+      background-color: #b93a3e;
+      color: #fff;
+    }
+
+    /* Profile icon container */
+    .profile-icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background-color: #d7e9d7;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 1rem;
+      cursor: default;
+      user-select: none;
+    }
+
+    /* Welcome card */
+    .welcome-card {
+      background-color: #f7fdfa;
+      border-radius: 0.5rem;
+      padding: 1.5rem 2rem;
+      box-shadow: 0 0.125rem 0.5rem rgb(0 0 0 / 0.06);
+      margin-bottom: 2rem;
+      max-width: 100%;
+    }
+
+    .welcome-card h3 {
+      font-weight: 700;
+      margin-bottom: 0.75rem;
+      color: #222;
+    }
+
+    .welcome-card p {
+      font-weight: 400;
+      font-size: 0.95rem;
+      color: #444;
+      margin-bottom: 1rem;
+    }
+
+    /* Stats cards container */
+    .stats-cards {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    /* Single stat card */
+    .stat-card {
+      background-color: white;
+      border-radius: 0.4rem;
+      flex: 1 1 220px;
+      padding: 1rem 1.25rem;
+      box-shadow: 0 0.125rem 0.4rem rgb(0 0 0 / 0.08);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      user-select: none;
+    }
+
+    .stat-info {
+      font-size: 0.85rem;
+      color: #666;
+      max-width: 70%;
+    }
+
+    .stat-value {
+      font-weight: 700;
+      font-size: 1.6rem;
+      color: #358235;
+      min-width: 40px;
+      text-align: right;
+      user-select: text;
+    }
+
+    /* Icon placeholder on stat cards (using image link) */
+    .stat-icon {
+      width: 24px;
+      height: 24px;
+      margin-left: 0.5rem;
+      flex-shrink: 0;
+    }
+
+    /* Table container */
+    .table-container {
+      background-color: #f7fdfa;
+      border-radius: 0.5rem;
+      padding: 1rem;
+      max-width: 100%;
+      overflow-x: auto;
+      border: 2px solid #a5cfa8;
+      box-shadow: 0 0 6px rgb(0 0 0 / 0.07);
+      margin-bottom: 2rem;
+    }
+
+    /* Table heading */
+    .table-caption {
+      font-weight: 700;
+      font-size: 1.15rem;
+      margin-bottom: 0.6rem;
+      color: white;
+      user-select: none;
+      opacity: 0.75;
+    }
+
+    /* Table styling */
+    table {
+      width: 100%;
+      border-collapse: separate;
+      border-spacing: 0 0.75rem;
+      color: #222;
+      font-size: 0.95rem;
+      user-select: text;
+    }
+
+    thead tr th {
+      background-color: transparent;
+      text-align: left;
+      border-bottom: 2px solid transparent;
+      color: #2c552b;
+      font-weight: 700;
+      padding-bottom: 0.25rem;
+      /* to separate headers */
+    }
+
+    tbody tr {
+      background-color: white;
+      border-radius: 0.4rem;
+      box-shadow: 0 0.125rem 0.4rem rgb(0 0 0 / 0.08);
+      transition: background-color 0.15s ease;
+    }
+
+    tbody tr:not(:last-child) {
+      margin-bottom: 0.75rem;
+    }
+
+    tbody tr:hover {
+      background-color: #e4f4e2;
+    }
+
+    tbody tr td {
+      padding: 0.55rem 0.75rem;
+      vertical-align: middle;
+    }
+
+    /* Rounded corners on first and last td for each row */
+    tbody tr td:first-child {
+      border-top-left-radius: 0.4rem;
+      border-bottom-left-radius: 0.4rem;
+    }
+
+    tbody tr td:last-child {
+      border-top-right-radius: 0.4rem;
+      border-bottom-right-radius: 0.4rem;
+      white-space: nowrap;
+    }
+
+    /* Status badges with distinct colors */
+    .badge-status {
+      font-weight: 600;
+      font-size: 0.8rem;
+      padding: 0.25rem 0.7rem;
+      border-radius: 9999px;
+      text-transform: capitalize;
+      cursor: default;
+      user-select: none;
+    }
+
+    .status-pending {
+      background-color: #bee5eb;
+      color: #0c5460;
+      border: 1px solid #86c1d6;
+    }
+
+    .status-approved {
+      background-color: #c3e6cb;
+      color: #155724;
+      border: 1px solid #8fd19e;
+    }
+
+    .status-processed {
+      background-color: #d6d8db;
+      color: #383d41;
+      border: 1px solid #a6aabc;
+    }
+
+    .status-rejected {
+      background-color: #f8d7da;
+      color: #721c24;
+      border: 1px solid #f5c6cb;
+    }
+
+    /* Action buttons in table */
+    .table-action-btn {
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: #2f7d31;
+      background: transparent;
+      border: none;
+      padding: 0.15rem 0.5rem;
+      cursor: pointer;
+      text-decoration: underline;
+    }
+
+    .table-action-btn.view-btn {
+      color: #1f4c1f;
+    }
+
+    .table-action-btn.view-btn:hover,
+    .table-action-btn.update-btn:hover {
+      color: #184316;
+    }
+
+    /* Responsive: vertical stacking on xs */
+    @media (max-width: 575.98px) {
+      .stats-cards {
+        flex-direction: column;
+      }
+
+      .stat-card {
+        max-width: 100%;
+      }
+
+      tbody tr {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        gap: 0.5rem 1rem;
+        padding: 0.75rem 0.5rem;
+      }
+
+      thead {
+        display: none;
+      }
+
+      tbody tr td {
+        padding: 0;
+        border-radius: 0;
+        white-space: normal;
+      }
+
+      tbody tr td:nth-child(1)::before {
+        content: "Request ID:";
+        font-weight: 700;
+        color: #555;
+        display: inline-block;
+        width: 100px;
+      }
+
+      tbody tr td:nth-child(2)::before {
+        content: "Beneficiary:";
+        font-weight: 700;
+        color: #555;
+        display: inline-block;
+        width: 100px;
+      }
+
+      tbody tr td:nth-child(3)::before {
+        content: "Date Submitted:";
+        font-weight: 700;
+        color: #555;
+        display: inline-block;
+        width: 100px;
+      }
+
+      tbody tr td:nth-child(4)::before {
+        content: "Amount:";
+        font-weight: 700;
+        color: #555;
+        display: inline-block;
+        width: 100px;
+      }
+
+      tbody tr td:nth-child(5)::before {
+        content: "Status:";
+        font-weight: 700;
+        color: #555;
+        display: inline-block;
+        width: 100px;
+      }
+
+      tbody tr td:nth-child(6)::before {
+        content: "Actions:";
+        font-weight: 700;
+        color: #555;
+        display: inline-block;
+        width: 100px;
+      }
+
+      tbody tr td:last-child {
+        white-space: normal;
+        padding-top: 0.5rem;
+      }
+    }
+
+    /* Donation Inventory Table */
+
+    .donation-inventory-container {
+      background-color: #d0e8d0;
+      padding: 1.5rem 1rem 2rem 1rem;
+      border-radius: 0.5rem;
+      margin-bottom: 2.5rem;
+      color: #222;
+    }
+
+    .donation-inventory-table {
+      width: 100%;
+      border-collapse: collapse;
+      color: #222;
+      font-size: 0.95rem;
+    }
+
+    .donation-inventory-table th,
+    .donation-inventory-table td {
+      padding: 0.75rem 1rem;
+      text-align: left;
+      border-bottom: 1px solid #bbb;
+      vertical-align: middle;
+    }
+
+    .donation-inventory-table thead th {
+      font-weight: 600;
+      color: #1d3b1d;
+      background-color: #f1f9f1;
+    }
+
+    .donation-inventory-actions button {
+      font-size: 0.85rem;
+      font-weight: 600;
+      background: none;
+      border: none;
+      text-decoration: underline;
+      cursor: pointer;
+      margin-right: 0.75rem;
+      color: #2e7d32;
+      padding: 0;
+    }
+
+    .donation-inventory-actions button:last-child {
+      margin-right: 0;
+    }
+
+    .donation-inventory-actions button:hover {
+      color: #1b4f1b;
+    }
+
+    /* Generate Reports Section */
+    .generate-reports-container {
+      background-color: #d0e8d0;
+      padding: 1rem 1rem 2rem 1rem;
+      border-radius: 0.5rem;
+      color: #222;
+    }
+
+    .generate-reports-heading {
+      font-weight: 700;
+      font-size: 1.15rem;
+      margin-bottom: 1rem;
+      color: #1d3b1d;
+      user-select: none;
+    }
+
+    .reports-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1rem;
+    }
+
+    .report-card {
+      background-color: white;
+      border-radius: 0.4rem;
+      padding: 1.25rem 1.5rem;
+      box-shadow: 0 0.125rem 0.4rem rgb(0 0 0 / 0.08);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 170px;
+      user-select: none;
+    }
+
+    .report-icon {
+      width: 28px;
+      height: 28px;
+      margin-bottom: 0.75rem;
+      user-select: none;
+    }
+
+    .report-title {
+      font-weight: 700;
+      font-size: 1rem;
+      margin-bottom: 0.5rem;
+      color: #356d35;
+    }
+
+    .report-desc {
+      font-size: 0.875rem;
+      color: #4a614a;
+      margin-bottom: 2rem;
+      flex-grow: 1;
+      line-height: 1.3;
+    }
+
+    .btn-generate {
+      background-color: #2e7d32;
+      border: none;
+      color: white;
+      font-weight: 600;
+      padding: 0.5rem 1rem;
+      border-radius: 0.3rem;
+      cursor: pointer;
+      user-select: none;
+      transition: background-color 0.2s;
+    }
+
+    .btn-generate:hover,
+    .btn-generate:focus {
+      background-color: #1b4f1b;
+      color: white;
+      outline: none;
+    }
+
+    /* Footer styling */
+    footer {
+      font-size: 0.875rem;
+      color: #333;
+      padding: 1rem 2rem;
+      background: transparent;
+      user-select: none;
+      margin-top: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+    }
+
+    footer .social-icons a {
+      margin-left: 1rem;
+      color: #333;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+    }
+
+    footer .social-icons a:hover,
+    footer .social-icons a:focus {
+      color: #198754;
+    }
+
+    /* Responsive adjustments for footer */
+    @media (max-width: 575.98px) {
+      footer {
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+    }
+
+    .heading {
+        margin-top: 100px;
+    }

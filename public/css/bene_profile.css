@@ -1,0 +1,186 @@
+body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom, #5a9e4a, #c2e2b0);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    /* Navbar / Header */
+    header.navbar-custom {
+      background-color: #4a9452;
+      padding: 0.5rem 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: #222;
+      user-select: none;
+      flex-wrap: wrap;
+    }
+    .nav-left,
+    .nav-center,
+    .nav-right {
+      display: flex;
+      align-items: center;
+    }
+    .nav-left {
+      font-weight: 700;
+      font-size: 1rem;
+      flex: 1;
+    }
+    .nav-center {
+      font-weight: 700;
+      font-size: 1.1rem;
+      color: white;
+      flex: 2;
+      justify-content: center;
+    }
+    .nav-right {
+      gap: 1.2rem;
+      flex: 1;
+      justify-content: flex-end;
+    }
+    .nav-right button {
+      font-weight: 600;
+      font-size: 0.9rem;
+      padding: 0.25rem 0.8rem;
+      background-color: #d9534f;
+      border: none;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+      white-space: nowrap;
+      transition: background-color 0.3s ease;
+    }
+    .nav-right button:hover,
+    .nav-right button:focus {
+      background-color: #b33939;
+      outline: none;
+      box-shadow: none;
+    }
+    .nav-right .profile-text {
+      font-weight: 600;
+      color: #e5e5e5;
+      cursor: default;
+      display: flex;
+      align-items: center;
+      user-select: none;
+    }
+    /* Main styles */
+    main.container-custom {
+      max-width: 960px;
+      width: 95%;
+      margin: 2rem auto 3rem;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+    /* Profile header */
+    .profile-header {
+      background-color: #4a9452;
+      border-radius: 0.5rem;
+      padding: 2rem 1rem 3rem;
+      text-align: center;
+      color: #f1f1f1;
+      user-select: none;
+    }
+    .profile-photo-placeholder {
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+      background-color: #386931;
+      color: white;
+      font-weight: 700;
+      font-size: 3rem;
+      line-height: 110px;
+      margin: 0 auto 1rem;
+      user-select: none;
+    }
+    .profile-name {
+      font-weight: 700;
+      font-size: 1.9rem;
+      margin-bottom: 0.25rem;
+    }
+    .profile-email {
+      font-weight: 400;
+      font-size: 0.9rem;
+      opacity: 0.75;
+      user-select: text;
+    }
+    /* Cards */
+    .card-custom {
+      background: white;
+      border-radius: 0.5rem;
+      padding: 2rem 2.5rem;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+    }
+    .card-custom h5 {
+      font-weight: 700;
+      font-size: 1.2rem;
+      margin-bottom: 0.3rem;
+      color: #264d26;
+    }
+    .card-custom small {
+      display: block;
+      margin-bottom: 1.5rem;
+      color: #666;
+    }
+    /* Form grid */
+    .form-row {
+      display: flex;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+      margin-bottom: 1.5rem;
+    }
+    .form-group {
+      flex: 1 1 30%;
+      min-width: 180px;
+      display: flex;
+      flex-direction: column;
+    }
+    .form-group.full-width {
+      flex: 1 1 100%;
+    }
+    label {
+      font-weight: 600;
+      font-size: 0.9rem;
+      margin-bottom: 0.3rem;
+      color: #2f532f;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="date"],
+    textarea {
+      padding: 0.475rem 0.75rem;
+      font-size: 1rem;
+      border: 1.5px solid #4a9452;
+      border-radius: 6px;
+      outline-offset: 2px;
+      resize: vertical;
+      transition: border-color 0.2s ease;
+      font-family: inherit;
+    }
+    input[type="text"]:focus,
+    input[type="email"]:focus,
+    input[type="tel"]:focus,
+    input[type="date"]:focus,
+    textarea:focus {
+      border-color: #2f622f;
+      background-color: #e8f5e8;
+      outline: none;
+    }
+    textarea {
+      min-height: 80px;
+    }
+    /* Responsive */
+    @media (max-width: 768px) {
+      .form-group {
+        flex: 1 1 100%;
+      }
+    }
+
+    .heading {
+        margin-top: 100px;
+    }

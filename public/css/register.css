@@ -1,0 +1,90 @@
+
+    body {
+      background: linear-gradient(to bottom, #4a9452, #cde7d0, #fff);
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      font-family: Arial, sans-serif;
+    }
+    .register-container {
+      max-width: 800px;
+      width: 100%;
+      display: flex;
+      background: transparent;
+      gap: 30px;
+      padding: 20px;
+      align-items: center;
+      justify-content: center;
+    }
+    .register-form {
+      background-color: white;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgb(0 0 0 / 0.1);
+      width: 400px;
+    }
+    .logo-section {
+      text-align: center;
+      color: white;
+      user-select: none;
+      flex-shrink: 0;
+    }
+    .logo-section svg {
+      width: 150px;
+      height: 150px;
+    }
+    .logo-text {
+      font-weight: 700;
+      font-size: 28px;
+      margin-top: 12px;
+      color: white;
+    }
+    .form-label {
+      font-weight: 500;
+      font-size: 14px;
+    }
+    .form-text-muted {
+      font-size: 12px;
+      color: #6c757d;
+      margin-bottom: 18px;
+    }
+    .btn-create {
+      background-color: #4a9452;
+      border: none;
+    }
+    .btn-create:hover {
+      background-color: #3d7a43;
+    }
+    small.text-center a {
+      text-decoration: none;
+      color: #6c757d;
+    }
+    small.text-center a:hover {
+      text-decoration: underline;
+      color: #4a9452;
+    }
+
+     @media (max-width: 768px) {
+      .register-container {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+      }
+      .logo-section {
+        order: -1;
+      }
+      .register-form {
+        width: 100%;
+        max-width: 400px;
+        padding: 20px 25px;
+      }
+      .logo-section svg {
+        width: 120px;
+        height: 120px;
+      }
+      .logo-text {
+        font-size: 24px;
+      }
+    }

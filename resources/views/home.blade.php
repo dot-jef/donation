@@ -1,8 +1,11 @@
 @extends('layouts.main')
 
+<link rel="stylesheet" href="{{asset('css/home.css')}}">
+
 @section('title', 'Home')
 
 @section('content')
+
 <section id="home" class="hero-section">
     <div class="container">
         <div class="row align-items-center">
@@ -28,7 +31,7 @@
 
             <!-- RIGHT SIDE IMAGE -->
             <div class="col-md-6 hero-img">
-                <img src="YOUR-IMAGE-HERE.jpg" alt="Donation Box">
+                <img src="{{asset('images/donate1.jpg')}}" alt="Donation Box">
             </div>
 
         </div>
@@ -110,12 +113,12 @@
                 </div>
 
                 <div class="col-md-5">
-                    <img src="IMAGE1.png" class="img-fluid rounded shadow" alt="Monetary donation illustration">
+                    <img src="{{asset('images/donate2.png')}}" class="img-fluid rounded shadow" alt="Monetary donation illustration">
                 </div>
 
                 <!-- Goods Donations -->
                 <div class="col-md-5">
-                    <img src="IMAGE2.png" class="img-fluid rounded shadow" alt="Goods donation illustration">
+                    <img src="{{asset('images/donate3.png')}}" class="img-fluid rounded shadow" alt="Goods donation illustration">
                 </div>
 
                 <div class="col-md-5 d-flex flex-column justify-content-center">
@@ -129,6 +132,18 @@
 
             </div>
 
+        </div>
+    </section>
+    <section class="py-5 text-center text-white" style="background-color: #4ca25c;">
+        <div class="container">
+            <h3 class="fw-bold mb-3">Ready to Make a Difference?</h3>
+            <p class="mb-4">
+            Your generosity fuels our mission. Join our community of donors, or if you need assistance, register as a beneficiary.
+            </p>
+            <div class="d-flex justify-content-center gap-3">
+                <button type="button" class="btn btn-light">Create Your Account</button>
+                <button type="button" class="btn btn-light">Existing User? Log In</button>
+            </div>
         </div>
     </section>
 @endsection

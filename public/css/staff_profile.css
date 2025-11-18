@@ -1,0 +1,86 @@
+body {
+      background: linear-gradient(180deg, #4caf50 0%, #a5d6a7 100%);
+      min-height: 100vh;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    .nav-link.active {
+      font-weight: 600;
+      color: #fff !important;
+      text-decoration: underline;
+    }
+    .nav-link {
+      color: #d7e9d7 !important;
+    }
+    .nav-link:hover {
+      color: #e8f5e9 !important;
+    }
+    .profile-img {
+      width: 40px;
+      height: 40px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 2px solid #fff;
+    }
+    .navbar-custom {
+      background-color: transparent !important;
+      padding: 0.5rem 1rem;
+    }
+    .main-container {
+      max-width: 700px;
+      margin: 2rem auto 3rem auto;
+      width: 90%;
+    }
+    .settings-card {
+      margin-bottom: 2rem;
+      border-radius: 0.5rem;
+      box-shadow: 0 0.125rem 0.25rem rgb(0 0 0 / 0.075);
+    }
+    /* Notification Preferences Section Styling */
+    .notification-card {
+      max-width: 700px;
+      margin: 0 auto 3rem auto;
+      background: #fff;
+      border-radius: 0.5rem;
+      padding: 1.5rem 2rem;
+      box-shadow: 0 0.125rem 0.25rem rgb(0 0 0 / 0.075);
+    }
+    /* Footer styles */
+    footer {
+      background: linear-gradient(180deg, #c8e6c9 0%, #e8f5e9 100%);
+      padding: 1rem 0;
+      margin-top: auto;
+    }
+    .footer-links {
+      font-size: 0.9rem;
+      color: #333;
+    }
+    .footer-links a {
+      color: #333;
+      text-decoration: none;
+      margin: 0 0.5rem;
+    }
+    .footer-links a:hover {
+      text-decoration: underline;
+    }
+    .social-icons a {
+      color: #333;
+      margin-left: 1rem;
+      font-size: 1.2rem;
+      text-decoration: none;
+    }
+    /* Responsive tweaks */
+    @media (max-width: 576px) {
+      .profile-img {
+        width: 35px;
+        height: 35px;
+      }
+    }
+
+    .heading {
+        margin-top: 100px;
+    }

@@ -1,0 +1,288 @@
+body {
+      background-color: #fefefe;
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Top navbar */
+    header {
+      background-color: #4caf50;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      user-select: none;
+    }
+
+    header .nav-left {
+      font-weight: 600;
+      font-size: 1.1rem;
+      color: black;
+      opacity: 0.8;
+      user-select: none;
+    }
+
+    header .nav-center {
+      font-weight: 700;
+      font-size: 1.3rem;
+      user-select: none;
+    }
+
+    header .btn-logout {
+      background-color: #dc3545;
+      border: none;
+      color: white;
+      font-weight: 600;
+      padding: 0.35rem 0.9rem;
+      border-radius: 0.25rem;
+      cursor: pointer;
+      transition: background-color 0.2s ease;
+      white-space: nowrap;
+      user-select: none;
+    }
+
+    header .btn-logout:hover,
+    header .btn-logout:focus {
+      background-color: #a7282c;
+      outline: none;
+      text-decoration: none;
+      color: white;
+    }
+
+    main.container {
+      flex: 1 0 auto;
+      max-width: 1000px;
+      margin: 2rem auto 3rem auto;
+      padding: 0 1rem 0 1rem;
+      user-select: text;
+    }
+
+    /* Inventory section header */
+    .inventory-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1.5rem;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .inventory-header h2 {
+      font-weight: 700;
+      font-size: 1.25rem;
+      margin: 0;
+      user-select: none;
+    }
+
+    .btn-add-donation {
+      background-color: #4caf50;
+      border: none;
+      color: white;
+      font-weight: 600;
+      padding: 0.4rem 1rem;
+      border-radius: 0.3rem;
+      cursor: pointer;
+      user-select: none;
+      transition: background-color 0.2s ease;
+      white-space: nowrap;
+    }
+
+    .btn-add-donation:hover,
+    .btn-add-donation:focus {
+      background-color: #357a38;
+      outline: none;
+      text-decoration: none;
+      color: white;
+    }
+
+    .search-filter-group {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      flex-grow: 1;
+      max-width: 480px;
+      align-items: center;
+    }
+
+    .search-filter-group input[type="search"],
+    .search-filter-group select {
+      flex: 1 1 150px;
+      min-width: 140px;
+      max-width: 280px;
+    }
+
+    /* Table styling */
+    table.table {
+      width: 100%;
+      border-collapse: separate;
+      border-spacing: 0 0.5rem;
+      font-size: 0.95rem;
+      color: #212529;
+    }
+
+    thead th {
+      font-weight: 600;
+      padding: 0.75rem 0.75rem 0.5rem 0.75rem;
+      text-align: left;
+      color: #495057;
+      border: none;
+      user-select: none;
+    }
+
+    tbody tr {
+      background-color: white;
+      box-shadow: 0 0.1rem 0.25rem rgb(0 0 0 / 0.08);
+      border-radius: 0.5rem;
+      transition: background-color 0.15s ease;
+    }
+
+    tbody tr:hover {
+      background-color: #e6f4ec;
+    }
+
+    tbody tr td {
+      padding: 0.6rem 0.8rem;
+      vertical-align: middle;
+      border: none;
+      white-space: nowrap;
+    }
+
+    /* Category badges */
+    .category-badge {
+      padding: 0.25em 0.75em;
+      border-radius: 999px;
+      font-weight: 600;
+      font-size: 0.83rem;
+      color: white;
+      user-select: none;
+      white-space: nowrap;
+      display: inline-block;
+      cursor: default;
+    }
+
+    .category-foods {
+      background-color: #007bff; /* blue */
+    }
+
+    .category-school-supply {
+      background-color: #198754; /* green */
+    }
+
+    .category-medicine {
+      background-color: #ffc107; /* yellow */
+      color: #212529;
+    }
+
+    /* Actions links */
+    .action-edit {
+      color: #0d6efd;
+      cursor: pointer;
+      font-weight: 600;
+      text-decoration: underline;
+      margin-right: 0.75rem;
+      user-select: none;
+    }
+
+    .action-edit:hover,
+    .action-edit:focus {
+      color: #084298;
+      outline: none;
+      text-decoration: underline;
+    }
+
+    .action-delete {
+      color: #dc3545;
+      cursor: pointer;
+      font-weight: 600;
+      text-decoration: underline;
+      margin-right: 0.75rem;
+      user-select: none;
+    }
+
+    .action-delete:hover,
+    .action-delete:focus {
+      color: #a7282c;
+      outline: none;
+      text-decoration: underline;
+    }
+
+    .action-update {
+      color: #8bc34a;
+      cursor: pointer;
+      font-weight: 600;
+      text-decoration: underline;
+      user-select: none;
+    }
+
+    .action-update:hover,
+    .action-update:focus {
+      color: #4a7b1a;
+      outline: none;
+      text-decoration: underline;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 575.98px) {
+      .inventory-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.75rem;
+      }
+
+      .search-filter-group {
+        width: 100%;
+        max-width: 100%;
+        flex-wrap: wrap;
+      }
+
+      .search-filter-group input[type="search"],
+      .search-filter-group select {
+        max-width: 100%;
+        min-width: 0;
+        flex-basis: 100%;
+      }
+
+      tbody tr td {
+        white-space: normal;
+      }
+
+      tbody tr {
+        display: block;
+        padding: 1rem 0.5rem;
+        border-radius: 0.5rem;
+      }
+
+      tbody tr td {
+        display: flex;
+        justify-content: space-between;
+        padding: 0.3rem 0;
+        border: none;
+      }
+
+      tbody tr td::before {
+        content: attr(data-label);
+        font-weight: 700;
+        color: #495057;
+        flex-basis: 45%;
+        white-space: normal;
+      }
+
+      tbody tr td:last-child {
+        justify-content: flex-start;
+        gap: 1rem;
+      }
+
+      .action-edit,
+      .action-delete,
+      .action-update {
+        margin-right: 0.5rem;
+      }
+    }
+
+    .heading {
+        margin-top: 100px;
+    }
