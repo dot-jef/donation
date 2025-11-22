@@ -1,6 +1,6 @@
 @extends('layouts.nof')
 
-<link rel="stylesheet" href="{{asset('css/admin_manage_request.css')}}">
+<link rel="stylesheet" href="{{asset('css/admin_manage_requests.css')}}">
 
 @section('title', 'Manage Request')
 

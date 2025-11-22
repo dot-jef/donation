@@ -26,10 +26,6 @@ body {
       border-radius: 50%;
       border: 2px solid #fff;
     }
-    .navbar-custom {
-      background-color: transparent !important;
-      padding: 0.5rem 1rem;
-    }
     .main-container {
       max-width: 700px;
       margin: 2rem auto 3rem auto;
