@@ -1,8 +1,5 @@
 body {
-      margin: 0;
-      font-family: Arial, sans-serif;
       background: linear-gradient(to bottom, #5a9e4a, #c2e2b0);
-      min-height: 100vh;
       display: flex;
       flex-direction: column;
     }
@@ -181,6 +178,4 @@ body {
       }
     }
 
-    .heading {
-        margin-top: 100px;
-    }
+    /* heading margin moved to main.css */

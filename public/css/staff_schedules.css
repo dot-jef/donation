@@ -1,7 +1,5 @@
 body {
       background-color: #f8f9fa;
-      min-height: 100vh;
-      margin: 0;
       padding: 1rem 0;
     }
     /* Navbar modified to match the screenshot colors */
@@ -147,6 +145,4 @@ body {
         justify-content: flex-start;
       }
     }
-    .heading {
-        margin-top: 100px;
-    }
+    /* heading margin moved to main.css */

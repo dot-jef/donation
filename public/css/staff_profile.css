@@ -1,12 +1,8 @@
 body {
       background: linear-gradient(180deg, #4caf50 0%, #a5d6a7 100%);
-      min-height: 100vh;
-      font-family: Arial, sans-serif;
-      margin: 0;
       padding: 0;
       display: flex;
       flex-direction: column;
-      min-height: 100vh;
     }
     .nav-link.active {
       font-weight: 600;
@@ -77,6 +73,4 @@ body {
       }
     }
 
-    .heading {
-        margin-top: 100px;
-    }
+    /* heading margin moved to main.css */

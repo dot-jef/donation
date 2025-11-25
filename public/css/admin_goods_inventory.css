@@ -1,8 +1,5 @@
 body {
       background-color: #fefefe;
-      margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      min-height: 100vh;
       display: flex;
       flex-direction: column;
     }
@@ -34,13 +31,7 @@ body {
 
     header .btn-logout {
       background-color: #dc3545;
-      border: none;
       color: white;
-      font-weight: 600;
-      padding: 0.35rem 0.9rem;
-      border-radius: 0.25rem;
-      cursor: pointer;
-      transition: background-color 0.2s ease;
       white-space: nowrap;
       user-select: none;
     }
@@ -283,6 +274,4 @@ body {
       }
     }
 
-    .heading {
-        margin-top: 100px;
-    }
+    /* heading margin moved to main.css */

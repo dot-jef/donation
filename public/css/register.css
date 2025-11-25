@@ -31,10 +31,6 @@
       user-select: none;
       flex-shrink: 0;
     }
-    .logo-section svg {
-      width: 150px;
-      height: 150px;
-    }
     .logo-text {
       font-weight: 700;
       font-size: 28px;
@@ -80,11 +76,12 @@
         max-width: 400px;
         padding: 20px 25px;
       }
-      .logo-section svg {
-        width: 120px;
-        height: 120px;
-      }
       .logo-text {
         font-size: 24px;
       }
     }
+
+      .logo-section img {
+        width: 400px;
+        height: 300px;
+      }

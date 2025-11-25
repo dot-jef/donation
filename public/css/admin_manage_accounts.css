@@ -15,8 +15,6 @@ body {
     }
     .navbar .btn-logout {
       background-color: #dc3545;
-      border: none;
-      font-weight: 600;
     }
     section {
       background: white;
@@ -103,6 +101,4 @@ body {
       }
     }
 
-    .heading {
-        margin-top: 100px;
-    }
+    /* heading margin moved to main.css */

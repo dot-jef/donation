@@ -3,7 +3,6 @@ body {
       font-family: Arial, sans-serif;
       /* Gradient background green */
       background: linear-gradient(to bottom, #4a9452, #cde7d0, #f5f9f5);
-      min-height: 100vh;
       display: flex;
       flex-direction: column;
     }
@@ -251,6 +250,4 @@ body {
       }
     }
 
-    .heading {
-        margin-top: 100px;
-    }
+    /* heading margin moved to main.css */

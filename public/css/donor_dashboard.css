@@ -1,7 +1,4 @@
 body {
-      min-height: 100vh;
-      margin: 0;
-      font-family: Arial, sans-serif;
       background: linear-gradient(to bottom, #4a9452, #b9d5b0);
       color: #222;
     }
@@ -9,15 +6,12 @@ body {
     .navbar-custom {
       background-color: #3a7c3a;
     }
-    .navbar-custom .navbar-brand,
-    .navbar-custom .nav-link,
+    /* Navbar links and brand will use the base style in main.css. */
     .navbar-custom .btn-logout {
       color: #fff;
-      font-weight: 600;
     }
     .navbar-custom .btn-logout {
       background-color: #c23616;
-      border: none;
     }
     .navbar-custom .btn-logout:hover,
     .navbar-custom .btn-logout:focus {
@@ -168,11 +162,7 @@ body {
     .badge-status {
       min-width: 75px;
       text-align: center;
-      font-weight: 600;
-      padding: 0.25em 0.7em;
-      border-radius: 15px;
-      font-size: 0.85rem;
-      user-select: none;
+      /* base metrics (font-size, padding, border-radius) are defined in main.css */
     }
     .badge-complete {
       background-color: #3a7c3a;
