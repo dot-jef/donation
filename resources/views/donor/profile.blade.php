@@ -1,4 +1,4 @@
-@extends('layouts.main')
+@extends('layouts.donor')
 
 <link rel="stylesheet" href="{{asset('css/donor_profile.css')}}">
 

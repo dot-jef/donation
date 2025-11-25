@@ -24,8 +24,8 @@
                 </p>
 
                 <div class="mt-4 d-flex gap-3">
-                    <a href="#" class="btn btn-green px-4 py-2">Create Account</a>
-                    <a href="#" class="btn btn-outline-secondary px-4 py-2">Login</a>
+                    <a href="{{route('register')}}" class="btn btn-green px-4 py-2">Create Account</a>
+                    <a href="{{route('login')}}" class="btn btn-outline-secondary px-4 py-2">Login</a>
                 </div>
             </div>
 
@@ -141,8 +141,8 @@
             Your generosity fuels our mission. Join our community of donors, or if you need assistance, register as a beneficiary.
             </p>
             <div class="d-flex justify-content-center gap-3">
-                <button type="button" class="btn btn-light">Create Your Account</button>
-                <button type="button" class="btn btn-light">Existing User? Log In</button>
+                <a href="{{route('register')}}" class="btn btn-light">Create Your Account</button>
+                <a href="{{route('login')}}" class="btn btn-light">Existing User? Log In</button>
             </div>
         </div>
     </section>

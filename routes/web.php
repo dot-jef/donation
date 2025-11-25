@@ -6,8 +6,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {return view('home');});
 
 // Auth
-Route::get('/register', function() {return view('auth.register');});
-Route::get('/login', function() {return view('auth.login');});
+Route::get('/register', function() {return view('auth.register');})->name('register');
+Route::get('/login', function() {return view('auth.login');})->name('login');
 
 // Donor
 Route::get('/donor/dashboard', function() {return view('donor.dashboard');});

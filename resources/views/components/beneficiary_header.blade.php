@@ -19,23 +19,17 @@
 
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#home">Home</a>
+                        <a class="nav-link" href="#dashboard">Dashboard</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#about">About CSWD</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#opportunities">Donation Opportunities</a>
+                        <a class="nav-link" href="#requests">My Requests</a>
                     </li>
                 </ul>
 
                 <!-- Right Buttons -->
                 <div class="d-flex">
-                    <a href="#" class="btn btn-light me-2 d-flex align-items-center">
-                        <i class="bi bi-box-arrow-in-right me-1"></i> Login
-                    </a>
-                    <a href="#" class="btn btn-outline-light d-flex align-items-center">
-                        <i class="bi bi-person-plus me-1"></i> Sign Up
+                    <a href="{{route('register')}}" class="btn btn-outline-light d-flex align-items-center bg-danger">
+                        <i class="bi bi-person-plus me-1"></i> Logout
                     </a>
                 </div>
 

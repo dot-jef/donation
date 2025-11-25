@@ -1,4 +1,4 @@
-@extends('layouts.main')
+@extends('layouts.beneficiary')
 
 <link rel="stylesheet" href="{{asset('css/bene_profile.css')}}">
 

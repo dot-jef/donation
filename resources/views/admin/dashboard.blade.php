@@ -1,4 +1,4 @@
-@extends('layouts.main')
+@extends('layouts.admin')
 
 <link rel="stylesheet" href="{{asset('css/admin_dashboard.css')}}">
 

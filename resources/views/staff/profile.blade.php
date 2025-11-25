@@ -1,4 +1,4 @@
-@extends('layouts.main')
+@extends('layouts.staff')
 
 <link rel="stylesheet" href="{{asset('css/staff_profile.css')}}">
 
