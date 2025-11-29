@@ -1,7 +1,5 @@
 body {
       background-color: #f8f9fa;
-      display: flex;
-      flex-direction: column;
     }
     /* Navbar (header) */
     .navbar-custom {
@@ -205,9 +203,7 @@ body {
         max-width: 100%;
         min-width: 100%;
       }
-      .table-responsive {
-        overflow-x: auto;
-      }
+      /* table-responsive overflow set in main.css */
       .btn-action {
         margin-bottom: 0.25rem;
       }

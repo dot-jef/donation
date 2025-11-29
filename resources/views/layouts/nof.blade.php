@@ -45,9 +45,9 @@
 
                 <!-- Right Buttons -->
                 <div class="d-flex">
-                    <a href="{{route('home')}}" class="btn btn-outline-light d-flex align-items-center bg-danger">
-                        <i class="bi bi-person-plus me-1"></i> Logout
-                    </a>
+                    @auth
+                        @include('components.logout')
+                    @endauth
                 </div>
 
             </div>

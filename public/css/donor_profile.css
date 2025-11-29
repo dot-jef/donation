@@ -152,9 +152,7 @@ body {
       min-width: 160px;
       margin-bottom: 1rem;
     }
-    .form-group.full-width {
-      flex: 1 1 100%;
-    }
+    /* full-width form-group flex property centralized in main.css */
     label {
       font-weight: 600;
       color: #264d26;

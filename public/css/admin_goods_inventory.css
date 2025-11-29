@@ -29,20 +29,7 @@ body {
       user-select: none;
     }
 
-    header .btn-logout {
-      background-color: #dc3545;
-      color: white;
-      white-space: nowrap;
-      user-select: none;
-    }
-
-    header .btn-logout:hover,
-    header .btn-logout:focus {
-      background-color: #a7282c;
-      outline: none;
-      text-decoration: none;
-      color: white;
-    }
+    /* Header logout button - styling deduplicated into admin_money_inventory and main.css */
 
     main.container {
       flex: 1 0 auto;

@@ -210,9 +210,7 @@ body {
         flex-grow: 1;
         width: 100%;
       }
-      .table-responsive {
-        overflow-x: auto;
-      }
+      /* table-responsive overflow set in main.css */
     }
 
     /* heading margin moved to main.css */

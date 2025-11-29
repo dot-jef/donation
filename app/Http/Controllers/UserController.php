@@ -10,6 +10,31 @@ use Illuminate\Support\Facades\Route as RouteFacade;
 
 class UserController extends Controller
 {
+    public function __construct()
+    {
+        // Protect resource routes: require login and admin role for resource actions.
+        $this->middleware(function ($request, $next) {
+            // Allow create & store (registration) to be public
+            $routeName = $request->route() ? $request->route()->getName() : null;
+            if ($routeName === 'register' || $routeName === 'user.store' || $routeName === 'user.create') {
+                return $next($request);
+            }
+            if (!\Illuminate\Support\Facades\Auth::check()) {
+                return redirect()->route('login');
+            }
+            if (\Illuminate\Support\Facades\Auth::user()->role !== 'admin') {
+                $role = \Illuminate\Support\Facades\Auth::user()->role;
+                // Redirect to role-specific dashboard if not admin
+                switch ($role) {
+                    case 'staff': return redirect()->route('staff.dashboard');
+                    case 'beneficiary': return redirect()->route('beneficiary.dashboard');
+                    case 'donor': return redirect()->route('donor.dashboard');
+                    default: return redirect()->route('home');
+                }
+            }
+            return $next($request);
+        })->except(['create', 'store']);
+    }
     /**
      * Display a listing of the resource.
      */

@@ -14,12 +14,7 @@ body {
       user-select: none;
       flex-wrap: wrap;
     }
-    .nav-left,
-    .nav-center,
-    .nav-right {
-      display: flex;
-      align-items: center;
-    }
+    /* nav-left/center/right common layout now in main.css */
     .nav-left {
       font-weight: 700;
       font-size: 1rem;
@@ -136,9 +131,7 @@ body {
       display: flex;
       flex-direction: column;
     }
-    .form-group.full-width {
-      flex: 1 1 100%;
-    }
+    /* full-width form-group flex property centralized in main.css */
     label {
       font-weight: 600;
       font-size: 0.9rem;
